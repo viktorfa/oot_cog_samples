@@ -1,0 +1,13 @@
+build:
+  gpu: true
+  cuda: "12.2"
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+    - "ninja-build"
+  python_version: "3.10"
+  python_packages:
+    - "ninja==1.10.2"
+    - "torch==2.2.0"
+    - "git+https://github.com/viktorfa/oot_diffusion.git"
+predict: "predict.py:Predictor"
